@@ -1,0 +1,71 @@
+<!-- What is the use of meta tag after title?
+Rajesh Patkar3:44 PM
+Meta data
+data about what the other data is 
+used by other tools to find out about the document -->
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Learning DOM at Rajesh Patkar Institute</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" 
+             content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+       <h1> Obtaining access to Html Element via it's id.</h1>
+       <p id="p1">
+          Hi, Welcome
+       </p>
+       <button onclick="doJob()"> click me </button>
+       <script>
+        function doJob()
+        {
+            var para = document.getElementById("p1");
+            // para.innerHTML = "Thank you, Good bye";
+            if(para.innerHTML == "Hi, Welcome"){
+                para.innerHTML = "Thank you, Good bye";
+            }
+            else{
+                para.innerHTML = "Hi, Welcome";
+            }
+        }
+    </script>
+   </body>
+</html>
+
+
+
+
+<!-- mayur dhakka    3:56 PM
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Learning DOM at Rajesh Patkar Institute</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" 
+             content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+       <h1> Obtaining access to Html Element via it's id.</h1>
+       <p id="p1">
+           Text before button click
+       </p>
+       <button onclick="doJob()">Click Me</button>
+       <script>
+
+           var sequence = ["morning","afternoon","evening","nigh
+mayur dhakka3:58 PM
+<script>
+
+           var sequence = ["morning","afternoon","evening","night"] 
+           var state = 0; 
+           var r = document.getElementById("p1");
+           function doJob()
+           {
+               r.innerHTML = sequence[state];
+               state++;
+               if(state==4) state = 0;
+           }
+       </script> -->
