@@ -10,8 +10,9 @@ Introducing Events -->
                console.log("f1");
                console.log(e);
            }
-           function f2() {
+           function f2(e) {
                console.log("f2");
+               console.log(e);
            }
            function f3() {
                console.log("f3");
@@ -24,7 +25,7 @@ Introducing Events -->
    <body>
        <div id="level1" onclick="f1(event)" style="background-color: brown; color: aliceblue;padding:20px">
            This is div at level1
-           <div id="level2" onclick="f2()" style="background-color: burlywood;padding:20px">
+           <div id="level2" onclick="f2(event)" style="background-color: burlywood;padding:20px">
                This is div at level2
                <p onclick="f3()" style="background-color: appworkspace;padding:20px">
                    <button onclick="f4()" style="background-color: beige;padding:20px">   
